@@ -214,7 +214,7 @@ span {
 
 /* --------------media queries------------- */
 
-@media only screen and (max-width: 64rem) {
+@media only screen and (max-width: 375px) {
   .bg-img {
     height: 46rem;
   }
