@@ -3,81 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Frontend Mentor | Fylo data storage component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <title>Data storage component</title>
   </head>
   <body>
-    <img class="bg-img" src="images/bg-desktop.png" alt="background-img" />
-
-    <div id="main">
-      <div class="storage">
-        <div class="str-title">
-          You’ve used <span>815 GB</span> of your storage
-        </div>
-
-        <div class="bar">
-          <div class="bar-flow">
-            <div class="bar-point"></div>
-          </div>
-        </div>
-
-        <div class="gb">
-          <span class="span">185</span> <span class="span-0">GB Left</span>
-        </div>
-        <div class="triangle"></div>
-
-        <span class="span-1"> 0 GB </span>
-
-        <span class="span-2">1000 GB</span>
-      </div>
-
-      <div class="icon">
+    <div class="container">
+      <div class="top-container">
         <div class="logo">
-          <img src="images/logo.svg" alt="logo-img" />
+          <img src="/images/logo.svg" alt="" />
         </div>
-
-        <div class="sub-icon">
-          <div class="document">
-            <img
-              class="img-1"
-              src="images/icon-document.svg"
-              alt="document-item"
-            />
-          </div>
-
-          <div class="folder">
-            <img class="img-2" src="images/icon-folder.svg" alt="folder-icon" />
-          </div>
-
-          <div class="upload">
-            <img class="img-3" src="images/icon-upload.svg" alt="upload-icon" />
-          </div>
-        </div>
+        <ul class="icons">
+          <li class="icon">
+            <img src="/images/icon-document.svg" alt="" />
+          </li>
+          <li class="icon">
+            <img src="/images/icon-folder.svg" alt="" />
+          </li>
+          <li class="icon">
+            <img src="/images/icon-upload.svg" alt="" />
+          </li>
+        </ul>
       </div>
-    </div>
+      <div class="bottom-container">
+        <div class="graphic">
+          <p>You've used <strong>815 GB</strong> of your storage</p>
+          <div class="inner-animation">
+            <div class="animation">
+              <div class="ball"></div>
+            </div>
+          </div>
+          <section class="data">
+            <small>0 GB</small>
+            <small>1000 GB</small>
+          </section>
+        </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#"> Amit (RFx)</a>
+        <section class="display">
+          <h2>185</h2>
+          <small>GB LEFT</small>
+        </section>
+      </div>
     </div>
   </body>
 </html>
